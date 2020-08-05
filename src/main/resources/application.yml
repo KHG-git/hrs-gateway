@@ -44,19 +44,19 @@ spring:
     gateway:
       routes:
         - id: reservation
-          uri: http://reservation:8080
+          uri: http://skccuser2-reservation:8080
           predicates:
             - Path=/reservations/**,/reservationinquiries/**
         - id: Reservationmanagement
-          uri: http://Reservationmanagement:8080
+          uri: http://skccuser2-Reservationmanagement:8080
           predicates:
             - Path=/hotelReservationManagements/** 
         - id: payment
-          uri: http://payment:8080
+          uri: http://skccuser2-payment:8080
           predicates:
             - Path=/payments/** 
         - id: point
-          uri: http://point:8080
+          uri: http://skccuser2-point:8080
           predicates:
             - Path=/points/** 
       globalcors:
