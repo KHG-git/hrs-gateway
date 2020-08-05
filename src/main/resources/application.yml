@@ -48,7 +48,7 @@ spring:
           predicates:
             - Path=/reservations/**,/reservationinquiries/**
         - id: Reservationmanagement
-          uri: http://skccuser2-Reservationmanagement:8080
+          uri: http://skccuser2-reservationmanagement:8080
           predicates:
             - Path=/hotelReservationManagements/** 
         - id: payment
